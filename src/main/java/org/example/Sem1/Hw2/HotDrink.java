@@ -25,8 +25,4 @@ public abstract class HotDrink {
         this.volume = volume;
     }
 
-    @Override
-    public String toString() {
-        return "" + name + " volume = " + volume;
-    }
 }

@@ -12,6 +12,7 @@ public class HotDrinkVendingMachine implements VendingMachine {
     public HotDrinkTemperature getProduct(String name, int volume, int temperature) {
         for (HotDrinkTemperature product : products) {
             if (product.getName().equals(name) && product.getVolume() == volume && product.getTemperature() == temperature) {
+                System.out.println("Возьмите " + name);
                 return product;
             }
         }

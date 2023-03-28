@@ -17,22 +17,15 @@ public class Main {
         products.add(new HotDrinkTemperature("Latte", 220, 65));
 
         HotDrinkVendingMachine machine = new HotDrinkVendingMachine(products);
-        HotDrinkTemperature hotDrink = machine.getProduct("Cappuccino", 200, 90);
 
-        if (hotDrink != null) {
-            System.out.println("Возьмите " + hotDrink.getName());
+        HotDrinkTemperature hotDrink = machine.getProduct("Cacao", 200, 90);
+        if(hotDrink == null){
+            System.out.println("Ваш выбор отсутствует");
         }
-        else {
-            System.out.println("Не удалось получить горячий напиток из торгового автомата.");
-        }
-
-
         hotDrink = machine.getProduct("Tea", 150, 80);
-        if (hotDrink != null) {
-            System.out.println("Возьмите " + hotDrink.getName());
+        if(hotDrink == null){
+            System.out.println("Ваш выбор отсутствует");
         }
-        else {
-            System.out.println("Не удалось получить горячий напиток из торгового автомата.");
-        }
+
     }
 }
