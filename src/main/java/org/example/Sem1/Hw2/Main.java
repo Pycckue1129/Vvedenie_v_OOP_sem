@@ -12,10 +12,13 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList<HotDrinkTemperature> products = new ArrayList<>();
+        ArrayList<HotDrink> products2 = new ArrayList<>();
         products.add(new HotDrinkTemperature("Tea", 150, 80));
         products.add(new HotDrinkTemperature("Latte", 220, 85));
         products.add(new HotDrinkTemperature("Cacao", 220, 75));
         products.add(new HotDrinkTemperature("Chocolate", 200, 65));
+        products2.add(new HotDrink("Sprite", 330));
+        products2.add(new HotDrink("CocaCola", 500));
 
         HotDrinkVendingMachine machine = new HotDrinkVendingMachine(products);
 
