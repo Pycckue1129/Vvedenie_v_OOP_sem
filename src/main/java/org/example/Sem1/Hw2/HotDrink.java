@@ -1,6 +1,6 @@
 package org.example.Sem1.Hw2;
 
-public abstract class HotDrink {
+public class HotDrink {
     private String name;
     private int volume;
 

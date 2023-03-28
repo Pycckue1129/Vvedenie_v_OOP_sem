@@ -12,9 +12,10 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList<HotDrinkTemperature> products = new ArrayList<>();
-        products.add(new HotDrinkTemperature("Cappuccino", 200, 90));
         products.add(new HotDrinkTemperature("Tea", 150, 80));
-        products.add(new HotDrinkTemperature("Latte", 220, 65));
+        products.add(new HotDrinkTemperature("Latte", 220, 85));
+        products.add(new HotDrinkTemperature("Cacao", 220, 75));
+        products.add(new HotDrinkTemperature("Chocolate", 200, 65));
 
         HotDrinkVendingMachine machine = new HotDrinkVendingMachine(products);
 
