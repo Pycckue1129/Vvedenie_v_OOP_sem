@@ -1,22 +1,32 @@
 package org.example.Sem1.Hw2;
 
-public class HotDrink extends Product {
-    private Integer temp;
+public abstract class HotDrink {
+    private String name;
+    private Double price;
 
-    public Integer getTemp() {
-        return temp;
-    }
-
-    public void setTemp(Integer temp) {
-        this.temp = temp;
-    }
-
-    public HotDrink(String name, Double price, Integer temp) {
-        super(name, price);
-        this.temp = temp;
-    }
     public HotDrink(String name, Double price) {
-        super(name, price);
+        this.name = name;
+        this.price = price;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "" + name + " price = " + price;
+    }
 }

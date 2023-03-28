@@ -12,15 +12,15 @@ import java.util.List;
 //Все вышеуказанное создать согласно принципам ООП пройдённым на семинаре
 public class Main {
     public static void main(String[] args) {
-        List<HotDrink> list = new ArrayList<>();
-        list.add(new HotDrink("Cappuccino", 200.0, 60));
-        list.add(new HotDrink("Tea", 100.0, 40));
-        list.add(new HotDrink("Latte", 220.0, 65));
+        List<HotDrinkTemp> list = new ArrayList<>();
+        list.add(new HotDrinkTemp("Cappuccino", 200.0, 60));
+        list.add(new HotDrinkTemp("Tea", 100.0, 40));
+        list.add(new HotDrinkTemp("Latte", 220.0, 65));
 
         HotDrinkVendingMachine machine = new HotDrinkVendingMachine(list);
 
-        HotDrink hotDrink = machine.getProduct("Cappuccino", 60);
-        System.out.println(hotDrink);
+        HotDrinkTemp hotDrinkTemp = machine.getProduct("Cappuccino", 60);
+        System.out.println(hotDrinkTemp);
 
 
 //        System.out.println(hotDrink);
