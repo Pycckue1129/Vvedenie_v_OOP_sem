@@ -2,11 +2,11 @@ package org.example.Sem1.Hw2;
 
 public abstract class HotDrink {
     private String name;
-    private Double price;
+    private int volume;
 
-    public HotDrink(String name, Double price) {
+    public HotDrink(String name, int volume) {
         this.name = name;
-        this.price = price;
+        this.volume = volume;
     }
 
     public String getName() {
@@ -17,16 +17,16 @@ public abstract class HotDrink {
         this.name = name;
     }
 
-    public Double getPrice() {
-        return price;
+    public int getVolume() {
+        return volume;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
+    public void setVolume(int volume) {
+        this.volume = volume;
     }
 
     @Override
     public String toString() {
-        return "" + name + " price = " + price;
+        return "" + name + " volume = " + volume;
     }
 }

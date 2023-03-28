@@ -1,7 +1,6 @@
 package org.example.Sem1.Hw2;
 
 import java.util.ArrayList;
-import java.util.List;
 
 //Создать наследника реализованного класса ГорячийНапиток с дополнительным полем int температура.
 //Создать класс ГорячихНапитковАвтомат реализующий интерфейс ТорговыйАвтомат и реализовать
@@ -12,18 +11,28 @@ import java.util.List;
 //Все вышеуказанное создать согласно принципам ООП пройдённым на семинаре
 public class Main {
     public static void main(String[] args) {
-        List<HotDrinkTemp> list = new ArrayList<>();
-        list.add(new HotDrinkTemp("Cappuccino", 200.0, 60));
-        list.add(new HotDrinkTemp("Tea", 100.0, 40));
-        list.add(new HotDrinkTemp("Latte", 220.0, 65));
+        ArrayList<HotDrinkTemperature> products = new ArrayList<>();
+        products.add(new HotDrinkTemperature("Cappuccino", 200, 90));
+        products.add(new HotDrinkTemperature("Tea", 150, 80));
+        products.add(new HotDrinkTemperature("Latte", 220, 65));
 
-        HotDrinkVendingMachine machine = new HotDrinkVendingMachine(list);
+        HotDrinkVendingMachine machine = new HotDrinkVendingMachine(products);
+        HotDrinkTemperature hotDrink = machine.getProduct("Cappuccino", 200, 90);
 
-        HotDrinkTemp hotDrinkTemp = machine.getProduct("Cappuccino", 60);
-        System.out.println(hotDrinkTemp);
+        if (hotDrink != null) {
+            System.out.println("Возьмите " + hotDrink.getName());
+        }
+        else {
+            System.out.println("Не удалось получить горячий напиток из торгового автомата.");
+        }
 
 
-//        System.out.println(hotDrink);
-
+        hotDrink = machine.getProduct("Tea", 150, 80);
+        if (hotDrink != null) {
+            System.out.println("Возьмите " + hotDrink.getName());
+        }
+        else {
+            System.out.println("Не удалось получить горячий напиток из торгового автомата.");
+        }
     }
 }

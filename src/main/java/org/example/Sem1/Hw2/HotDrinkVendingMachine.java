@@ -1,33 +1,20 @@
 package org.example.Sem1.Hw2;
 
-import java.util.List;
+import java.util.ArrayList;
 
-public class HotDrinkVendingMachine implements Machine {
+public class HotDrinkVendingMachine implements VendingMachine {
+    private final ArrayList<HotDrinkTemperature> products;
 
-    private final List<HotDrinkTemp> products;
-
-    public HotDrinkVendingMachine(List<HotDrinkTemp> products) {
+    public HotDrinkVendingMachine(ArrayList<HotDrinkTemperature> products) {
         this.products = products;
     }
 
-    public HotDrink getProduct(String name){
-        for(HotDrink hotDrink : products){
-            if(hotDrink.getName().equalsIgnoreCase(name)){
-                return hotDrink;
+    public HotDrinkTemperature getProduct(String name, int volume, int temperature) {
+        for (HotDrinkTemperature product : products) {
+            if (product.getName().equals(name) && product.getVolume() == volume && product.getTemperature() == temperature) {
+                return product;
             }
         }
-        throw new IllegalStateException(String.format("Продукт c названием %s не найден.", name));
-    }
-
-    public HotDrinkTemp getProduct(String name, int temp){
-        for(HotDrink hotDrink : products){
-            if(hotDrink instanceof HotDrinkTemp){
-                if(hotDrink.getName().equalsIgnoreCase(name) && ((HotDrinkTemp) hotDrink).getTemp() == temp){
-                    return (HotDrinkTemp) hotDrink;
-                }
-            }
-
-        }
-        throw new IllegalStateException(String.format("Продукт c названием %s не найден.", name));
+        return null;
     }
 }
