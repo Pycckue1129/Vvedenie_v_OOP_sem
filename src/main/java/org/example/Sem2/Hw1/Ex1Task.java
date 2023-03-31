@@ -6,9 +6,6 @@ import java.util.List;
 
 public class Ex1Task extends Ex1{
 
-    public Ex1Task() {
-        someList = new LinkedList<>(Arrays.asList(1, -2, -3, 4, -5, 6, 7, -8, -9));
-    }
     @Override
     public List<Integer> getSomeList() {
         return someList;
@@ -16,7 +13,7 @@ public class Ex1Task extends Ex1{
 
     @Override
     public List<Integer> setSomeList() {
-        return someList;
+        return someList = new LinkedList<>(Arrays.asList(1, -2, -3, 4, -5, 6, 7, -8, -9));
     }
 
     @Override
