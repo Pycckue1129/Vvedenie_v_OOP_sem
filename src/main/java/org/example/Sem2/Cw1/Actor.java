@@ -1,6 +1,6 @@
 package org.example.Sem2.Cw1;
 
-public abstract class Actor implements ActorBehavoir{
+public abstract class Actor implements ActorBehaviour {
     protected String name;
     protected boolean makeOrder;
     protected boolean takeOrder;
