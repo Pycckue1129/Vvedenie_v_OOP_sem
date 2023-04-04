@@ -5,5 +5,7 @@ public class Main {
         Cat cat = new Cat();
         cat.setName("barsik");
         System.out.println(cat.getName());
+        cat.setAge(10);
+        System.out.println(cat.getAge());
     }
 }
