@@ -1,4 +1,4 @@
-package org.example.Lsn5;
+package org.example.Lsn5.Calc;
 
 public interface Model {
     int result();
@@ -6,4 +6,5 @@ public interface Model {
     void setX(int value);
 
     void setY(int value);
+    void setZ(int value);
 }

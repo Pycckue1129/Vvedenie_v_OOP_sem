@@ -1,4 +1,4 @@
-package org.example.Lsn5;
+package org.example.Lsn5.Calc;
 
 import java.util.Scanner;
 

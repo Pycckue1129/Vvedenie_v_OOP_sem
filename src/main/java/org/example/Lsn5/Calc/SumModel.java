@@ -1,4 +1,4 @@
-package org.example.Lsn5;
+package org.example.Lsn5.Calc;
 
 public class SumModel extends CalcModel {
 
@@ -8,7 +8,7 @@ public class SumModel extends CalcModel {
     // do_it
     @Override
     public int result() {
-        return x + y;
+        return x + y + z;
     }
 
     @Override
@@ -21,4 +21,8 @@ public class SumModel extends CalcModel {
         super.y = value;
     }
 
+    @Override
+    public void setZ(int value) {
+        super.z = value;
+    }
 }
