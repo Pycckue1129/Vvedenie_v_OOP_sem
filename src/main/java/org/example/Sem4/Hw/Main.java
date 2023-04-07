@@ -1,9 +1,10 @@
-package org.example.Sem4.Cw2;
+package org.example.Sem4.Hw;
 
-import org.example.Sem4.Cw2.data.Student;
-import org.example.Sem4.Cw2.data.Teacher;
-import org.example.Sem4.Cw2.data.UserComparator;
-import org.example.Sem4.Cw2.view.StudentView;
+import org.example.Sem4.Hw.data.Student;
+import org.example.Sem4.Hw.data.Teacher;
+import org.example.Sem4.Hw.data.UserComparator;
+import org.example.Sem4.Hw.view.StudentView;
+import org.example.Sem4.Hw.view.TeacherView;
 
 import java.util.List;
 
@@ -26,5 +27,9 @@ public class Main {
         StudentView studentView1 = new StudentView();
         System.out.println(studentView1.sendOnConsole(List.of(new Student("FirstName",
                 "SecondName", "Patronymic", "21222022"))));
+
+        TeacherView teacherView = new TeacherView();
+        System.out.println(teacherView.sendOnConsole(List.of(new Teacher("FirstName",
+                "SecondName", "Patronymic", "05102001"))));
     }
 }

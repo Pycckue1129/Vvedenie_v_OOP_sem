@@ -1,14 +1,12 @@
-package org.example.Sem4.Cw2.controller;
+package org.example.Sem4.Hw.controller;
 
-import org.example.Sem4.Cw2.data.Student;
-import org.example.Sem4.Cw2.data.Teacher;
-import org.example.Sem4.Cw2.data.User;
-import org.example.Sem4.Cw2.service.DataService;
-import org.example.Sem4.Cw2.service.StudentGroupService;
-import org.example.Sem4.Cw2.view.StudentView;
-import org.example.Sem4.Cw2.view.UserView;
+import org.example.Sem4.Hw.data.Student;
+import org.example.Sem4.Hw.data.Teacher;
+import org.example.Sem4.Hw.data.User;
+import org.example.Sem4.Hw.service.DataService;
+import org.example.Sem4.Hw.service.StudentGroupService;
+import org.example.Sem4.Hw.view.StudentView;
 
-import java.time.LocalDate;
 import java.util.List;
 
 public class  UserController {

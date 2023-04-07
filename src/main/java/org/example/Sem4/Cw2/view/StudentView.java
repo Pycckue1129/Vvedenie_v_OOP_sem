@@ -7,8 +7,10 @@ import org.example.Sem4.Cw2.data.User;
 import java.util.List;
 import java.util.logging.Logger;
 
-public interface UserView<T extends User> {
+public class StudentView implements UserView<Student>{
+    Logger logger = Logger.getLogger(UserView.class.getName());
 
-    public T sendOnConsole(List<User> userList);
-
+    public Student sendOnConsole(List<User> userList){
+        return (Student) userList.get(0);
+    }
 }
