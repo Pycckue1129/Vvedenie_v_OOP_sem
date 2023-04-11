@@ -8,7 +8,7 @@ public abstract class NumAbstract implements NumInterface {
     }
 
     @Override
-    public void sum(int n1, int n2) {
+    public void Sum(int n1, int n2) {
         System.out.println(n1 + n2);
     }
 }

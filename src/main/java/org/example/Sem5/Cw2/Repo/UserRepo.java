@@ -1,7 +1,6 @@
 package org.example.Sem5.Cw2.Repo;
 
 import org.example.Sem5.Cw2.Model.User;
-
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +10,7 @@ public class UserRepo {
     private List<User> db = new ArrayList<>();
 
     public UserRepo(List<User> db) {
-        this.db = new ArrayList<>();
+        this.db = db;
     }
 
     public UserRepo() {
@@ -27,7 +26,7 @@ public class UserRepo {
 
     public User getUserFromRepo(User user) {
         for (User el : db){
-            if (el.getUserId().equals(user.getUserId())){
+            if (el.getUserId().equals(user.getUserId())){//(el.getUserID().equals(user.getUserID())){
                 return el;
             }
         }
