@@ -27,7 +27,7 @@ public class UserRepo {
 
     public User getUserFromRepo(User user) {
         for (User el : db){
-            if (el.getUserID().equals(user.getUserID())){
+            if (el.getUserId().equals(user.getUserId())){
                 return el;
             }
         }

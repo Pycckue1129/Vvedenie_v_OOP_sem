@@ -27,7 +27,7 @@ public class User {
         this.age = age;
     }
 
-    public Integer getUserID() {
+    public Integer getUserId() {
         return userID;
     }
 
