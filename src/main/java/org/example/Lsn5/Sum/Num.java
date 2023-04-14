@@ -1,12 +1,14 @@
 package org.example.Lsn5.Sum;
 
-public class Num extends NumAbstract {
-
-    protected Num(int num) {
-        super(num);
+public class Num {
+    public Num(int i) {
     }
 
-    public void multi(int n1, int n2){
-        System.out.println(n1 * n2);
+    public void Sum(int i, int i1) {
+        System.out.println(i + i1);
+    }
+
+    public void multi(int i, int i1) {
+        System.out.println(i * i);
     }
 }
